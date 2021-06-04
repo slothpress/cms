@@ -1,4 +1,4 @@
-export enum ApplicationMode {
+export enum ApplicationModeEnum {
   local = 'local',
   production = 'production'
 }

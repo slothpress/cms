@@ -1,14 +1,14 @@
 import Vue from 'vue';
 import Vuex, { StoreOptions } from 'vuex';
-import RootState from './models/rootState';
-import state from './modules/root/state';
-import actions from './modules/root/actions';
-import mutations from './modules/root/mutations';
-import getters from './modules/root/getters';
+import ApplicationStateInterface from './modules/application/application-state.interface';
+import state from './modules/application/state';
+import actions from './modules/application/actions';
+import mutations from './modules/application/mutations';
+import getters from './modules/application/getters';
 
 Vue.use(Vuex);
 
-const store: StoreOptions<RootState> = {
+const store: StoreOptions<ApplicationStateInterface> = {
   state,
   actions,
   mutations,
@@ -16,4 +16,4 @@ const store: StoreOptions<RootState> = {
   modules: {}
 };
 
-export default new Vuex.Store<RootState>(store);
+export default new Vuex.Store<ApplicationStateInterface>(store);

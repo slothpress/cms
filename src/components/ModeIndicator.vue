@@ -5,7 +5,7 @@
 </template>
 
 <script lang="ts">
-import { ApplicationMode } from '@/store/models/applicationMode';
+import { ApplicationModeEnum } from '@/store/modules/application/domain/application-mode.enum';
 import { Component, Vue } from 'vue-property-decorator';
 import { Action, Getter } from 'vuex-class';
 
@@ -13,7 +13,7 @@ import { Action, Getter } from 'vuex-class';
 export default class ModeIndicator extends Vue {
   @Action('determineAppMode') determineAppMode!: () => void;
 
-  @Getter('getApplicationMode') getApplicationMode!: ApplicationMode | undefined;
+  @Getter('getApplicationMode') getApplicationMode!: ApplicationModeEnum | undefined;
 
   mounted(): void {
     this.determineAppMode();
