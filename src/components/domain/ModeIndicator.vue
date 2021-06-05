@@ -4,7 +4,7 @@
   </div>
 </template>
 
-<script lang="ts">
+<script lang='ts'>
 import { ApplicationModeEnum } from '@/store/modules/application/domain/application-mode.enum';
 import { Component, Vue } from 'vue-property-decorator';
 import { Action, Getter } from 'vuex-class';

@@ -906,6 +906,21 @@
   dependencies:
     "@hapi/hoek" "^8.3.0"
 
+"@inkline/inkline@^2.0.0", "@inkline/inkline@^2.3.6":
+  version "2.3.6"
+  resolved "https://registry.yarnpkg.com/@inkline/inkline/-/inkline-2.3.6.tgz#bfcf9c186e14a22ee3f8fc0f71a01d9699938260"
+  integrity sha512-qixrOqq6AAMCKB+WfGdGodFGsp0X8perNvKKBFbDcC9OBG/FSLqrNpZyvFCf7EZTk2rXbRwowM5niqqKuupSYw==
+  dependencies:
+    "@popperjs/core" "^2.4.2"
+    fuse.js "^6.4.0"
+
+"@inkline/vue-cli-plugin-inkline@~2.3.6":
+  version "2.3.6"
+  resolved "https://registry.yarnpkg.com/@inkline/vue-cli-plugin-inkline/-/vue-cli-plugin-inkline-2.3.6.tgz#6e6faa89ef8df9229b66c62ca1af6f236c2cad02"
+  integrity sha512-KdFbfnn999YpslbT4Td5lVDn5gaBx03iP0HwY280I8Mn3ncSce0PySO2oYPFNlfZ/e6zyo9qUYDO/1x1sqWZWw==
+  dependencies:
+    "@inkline/inkline" "^2.3.6"
+
 "@intervolga/optimize-cssnano-plugin@^1.0.5":
   version "1.0.6"
   resolved "https://registry.yarnpkg.com/@intervolga/optimize-cssnano-plugin/-/optimize-cssnano-plugin-1.0.6.tgz#be7c7846128b88f6a9b1d1261a0ad06eb5c0fdf8"
@@ -1096,6 +1111,11 @@
   dependencies:
     "@nodelib/fs.scandir" "2.1.4"
     fastq "^1.6.0"
+
+"@popperjs/core@^2.4.2":
+  version "2.9.2"
+  resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.9.2.tgz#adea7b6953cbb34651766b0548468e743c6a2353"
+  integrity sha512-VZMYa7+fXHdwIq1TDhSXoVmSPEGM/aa+6Aiq3nVVJ9bXr24zScr+NlKFKC3iPljA7ho/GAZr+d2jOf5GIRC30Q==
 
 "@soda/friendly-errors-webpack-plugin@^1.7.1":
   version "1.8.0"
@@ -5120,6 +5140,11 @@ functional-red-black-tree@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/functional-red-black-tree/-/functional-red-black-tree-1.0.1.tgz#1b0ab3bd553b2a0d6399d29c0e3ea0b252078327"
   integrity sha1-GwqzvVU7Kg1jmdKcDj6gslIHgyc=
+
+fuse.js@^6.4.0:
+  version "6.4.6"
+  resolved "https://registry.yarnpkg.com/fuse.js/-/fuse.js-6.4.6.tgz#62f216c110e5aa22486aff20be7896d19a059b79"
+  integrity sha512-/gYxR/0VpXmWSfZOIPS3rWwU8SHgsRTwWuXhyb2O6s7aRuVtHtxCkR33bNYu3wyLyNx/Wpv0vU7FZy8Vj53VNw==
 
 gauge@~2.7.3:
   version "2.7.4"

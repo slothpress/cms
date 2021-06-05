@@ -1,18 +1,21 @@
 import { Module } from 'vuex';
-import actions from './actions';
-import mutations from './mutations';
-import getters from './getters';
-import ApplicationStateInterface from '@/store/modules/application/application-state.interface';
-import ResourcesStateInterface from '@/store/modules/resources/resources-state.interface';
 
-const state: ResourcesStateInterface = {};
+import ResourcesState from '@/store/modules/resources/resources-state.interface';
+import { actions } from '@/store/modules/resources/actions';
+import { mutations } from '@/store/modules/resources/mutations';
+import { getters } from '@/store/modules/resources/getters';
+import { RootState } from '@/store/root-state.interface';
+
+export const state: ResourcesState = {
+  resources: []
+};
 
 const namespaced = true;
 
-export const address: Module<ResourcesStateInterface, ApplicationStateInterface> = {
+export const resources: Module<ResourcesState, RootState> = {
   namespaced,
-  state,
   actions,
   mutations,
-  getters
+  getters,
+  state
 };

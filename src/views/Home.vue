@@ -1,17 +1,16 @@
 <template>
-  <div class="home">
-    <mode-indicator />
-  </div>
+  <base-layout></base-layout>
 </template>
 
-<script lang="ts">
+<script lang='ts'>
 import { Component, Vue } from 'vue-property-decorator';
-import ModeIndicator from '@/components/ModeIndicator.vue';
+import BaseLayout from '@/components/layout/BaseLayout.vue';
 
 @Component({
   components: {
-    ModeIndicator
+    BaseLayout
   }
 })
-export default class Home extends Vue {}
+export default class Home extends Vue {
+}
 </script>

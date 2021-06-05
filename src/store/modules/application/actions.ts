@@ -1,8 +1,9 @@
 import { ApplicationModeEnum } from '@/store/modules/application/domain/application-mode.enum';
-import ApplicationStateInterface from '@/store/modules/application/application-state.interface';
+import ApplicationState from '@/store/modules/application/application-state.interface';
 import { ActionTree } from 'vuex';
+import { RootState } from '@/store/root-state.interface';
 
-const actions: ActionTree<ApplicationStateInterface, ApplicationStateInterface> = {
+export const actions: ActionTree<ApplicationState, RootState> = {
   determineAppMode({ commit }): void {
     const appMode = window.location.origin.includes('localhost')
       ? ApplicationModeEnum.local
@@ -10,5 +11,3 @@ const actions: ActionTree<ApplicationStateInterface, ApplicationStateInterface> 
     commit('setApplicationMode', appMode);
   }
 };
-
-export default actions;
