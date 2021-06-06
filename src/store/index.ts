@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import Vuex, { StoreOptions } from 'vuex';
 import { application } from './modules/application';
-import { resources } from './modules/resources';
+import { entities } from './modules/entities';
 import { RootState } from '@/store/root-state.interface';
 
 Vue.use(Vuex);
@@ -9,7 +9,7 @@ Vue.use(Vuex);
 const store: StoreOptions<RootState> = {
   modules: {
     application,
-    resources
+    entities
   }
 };
 

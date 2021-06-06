@@ -1,4 +1,4 @@
-import { ResourceType } from '@/store/modules/resources/domain/resource-type.enum';
+import { ResourceType } from '@/store/modules/entities/domain/resource-type.enum';
 
 export default interface Resource {
   type: ResourceType;

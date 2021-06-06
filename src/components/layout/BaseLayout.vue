@@ -4,24 +4,22 @@
 
     <i-layout-content>
       <i-container>
-        <add-ressource-button />
+        <entities-list />
       </i-container>
     </i-layout-content>
   </i-layout>
 </template>
 
-<script lang='ts'>
+<script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
 import BaseHeader from '@/components/layout/BaseHeader.vue';
-import AddRessourceButton from '@/components/domain/ressources/AddRessourceButton.vue';
+import EntitiesList from '@/components/domain/entities/EntitiesList.vue';
 
 @Component({
   components: {
     BaseHeader,
-    AddRessourceButton
+    EntitiesList
   }
 })
-export default class BaseLayout extends Vue {
-
-}
+export default class BaseLayout extends Vue {}
 </script>
