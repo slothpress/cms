@@ -1,6 +1,6 @@
-import { ResourceType } from '@/store/modules/entities/domain/resource-type.enum';
+import Resource from '@/store/modules/entities/domain/resource.interface';
 
 export default interface Entity {
-  name: string;
-  resources: Array<ResourceType>;
+  title: string;
+  resources: Array<Resource>;
 }

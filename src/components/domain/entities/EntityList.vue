@@ -3,7 +3,9 @@
     <h3>Entities:</h3>
     <i-list-group :bordered="false">
       <i-list-group-item v-for="entity in getEntities" :key="entity.index">
-        {{ entity.name }}
+        <router-link :to="{ name: 'EntityList', params: { name: entity.name } }">
+          {{ entity.name }}
+        </router-link>
       </i-list-group-item>
     </i-list-group>
   </div>
@@ -12,7 +14,7 @@
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
 import { namespace } from 'vuex-class';
-import Entity from '@/store/modules/entities/domain/entity.interface';
+import Entity from '@/store/modules/entities/domain/entity-schema.interface';
 
 const entities = namespace('entities');
 

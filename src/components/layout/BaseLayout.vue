@@ -4,7 +4,7 @@
 
     <i-layout-content>
       <i-container>
-        <entities-list />
+        <slot />
       </i-container>
     </i-layout-content>
   </i-layout>
@@ -13,7 +13,7 @@
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
 import BaseHeader from '@/components/layout/BaseHeader.vue';
-import EntitiesList from '@/components/domain/entities/EntitiesList.vue';
+import EntitiesList from '@/components/domain/entities/EntityList.vue';
 
 @Component({
   components: {
